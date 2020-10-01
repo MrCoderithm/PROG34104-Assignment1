@@ -20,22 +20,61 @@ class OutputActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        val hand = intent.getStringExtra(MESSAGE_TEXT_KEY)
-        binding.messageText.text = hand
+        val userhand = intent.getStringExtra(MESSAGE_TEXT_KEY)
+        binding.messageText.text = userhand
 
-//        if (hand == "Paper") {
-//            Toast.makeText(this, hand, Toast.LENGTH_SHORT).show()
-//        }
+        //       Paper > Rock
+        //       Rock > Scissor
+        //       Scissor > Paper
 
         val list = listOf("Rock","Paper","Scissor")
-        val random = list.random()
-        Toast.makeText(this, random, Toast.LENGTH_SHORT).show()
+        val cpuhand = list.random()
+        binding.messageText1.text = cpuhand
 
+        if (userhand == cpuhand){
+            Toast.makeText(this, "It's a Tie!", Toast.LENGTH_SHORT).show()
+        }
 
+        if (userhand.toString() == "Rock")
+        {
+            if(cpuhand == "Scissor")
+            {
+                Toast.makeText(this, "Rock Beats Scissors. You Win!", Toast.LENGTH_SHORT).show()
+            }
+            if(cpuhand == "Paper")
+            {
+                Toast.makeText(this, "Paper Beats Rock. You Loose!", Toast.LENGTH_SHORT).show()
+            }
 
+        }
 
+        if (userhand.toString() == "Paper" ){
+            if(cpuhand == "Scissor")
+            {
+                Toast.makeText(this, "Scissor Beats Paper. You Loose!", Toast.LENGTH_SHORT).show()
+            }
 
-        // make the close button work
+            if(cpuhand == "Rock")
+            {
+                Toast.makeText(this, "Paper Beats Rock. You Win!", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        if (userhand.toString() == "Scissor")
+        {
+            if(cpuhand == "Rock")
+            {
+                Toast.makeText(this, "Rock Beats Scissors. You Loose", Toast.LENGTH_SHORT).show()
+            }
+
+            if(cpuhand == "Paper")
+            {
+                Toast.makeText(this, "Scissors Beats Paper. You Win!", Toast.LENGTH_SHORT).show()
+            }
+
+        }
+
+            // make the close button work
         binding.closeButton.setOnClickListener { finish() }
     }
 
