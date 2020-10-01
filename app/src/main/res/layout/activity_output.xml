@@ -83,8 +83,6 @@
         android:background="#9FD3EF" />
 
     <TextView
-        android:id="@+id/sheridan"
-        style="@style/sheridan_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#F8F8F8"

@@ -87,6 +87,4 @@ class OutputActivity : AppCompatActivity() {
         binding.playagainButton.setOnClickListener { finish() }
     }
 
-
-
 }
