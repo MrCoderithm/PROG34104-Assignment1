@@ -3,9 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/InputTheme"
+    android:background="#FFFFFF"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:theme="@style/InputTheme"
     tools:context=".InputActivity">
 
     <TextView
@@ -20,11 +21,11 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/select_message"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
+        android:layout_width="267dp"
+        android:layout_height="55dp"
+        android:text="@string/choose_hand"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="30sp" />
 
 
     <RadioGroup
@@ -39,31 +40,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/game_rock" />
+            android:text="@string/game_rock"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/paper_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/game_paper" />
+            android:text="@string/game_paper"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/scissor_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/game_scissor" />
+            android:text="@string/game_scissor"
+            android:textSize="24sp" />
 
     </RadioGroup>
 
     <Button
         android:id="@+id/send_button"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="147dp"
+        android:layout_height="64dp"
         android:layout_marginTop="@dimen/gap2"
-        android:text="@string/play" />
+        android:background="#0688EF"
+        android:text="@string/play"
+        android:textSize="30sp" />
 
     <Space
         android:layout_width="match_parent"
@@ -71,7 +77,12 @@
         android:layout_weight="2" />
 
     <TextView
-        android:id="@+id/sheridan"
-        android:text="@string/sheridan"
-        style="@style/sheridan_label" />
+        android:id="@+id/sheridan2"
+        style="@style/sheridan_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8"
+        android:text="@string/student"
+        android:textColor="#04ACFA"
+        android:textColorHighlight="#FFFFFF" />
 </LinearLayout>

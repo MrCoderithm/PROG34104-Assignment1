@@ -32,18 +32,22 @@ class OutputActivity : AppCompatActivity() {
         binding.messageText1.text = cpuhand
 
         if (userhand == cpuhand){
-            Toast.makeText(this, "It's a Tie!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "It's a Tie!", Toast.LENGTH_LONG).show()
+            binding.messageText2.text = "It's a draw"
+
         }
 
         if (userhand.toString() == "Rock")
         {
             if(cpuhand == "Scissor")
             {
-                Toast.makeText(this, "Rock Beats Scissors. You Win!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Rock Beats Scissors. You Win!", Toast.LENGTH_LONG).show()
+                binding.messageText2.text = "You beat the computer!"
             }
             if(cpuhand == "Paper")
             {
-                Toast.makeText(this, "Paper Beats Rock. You Loose!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Paper Beats Rock. You Loose!", Toast.LENGTH_LONG).show()
+                binding.messageText2.text = "Computer has beat you."
             }
 
         }
@@ -51,12 +55,15 @@ class OutputActivity : AppCompatActivity() {
         if (userhand.toString() == "Paper" ){
             if(cpuhand == "Scissor")
             {
-                Toast.makeText(this, "Scissor Beats Paper. You Loose!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Scissor Beats Paper. You Loose!", Toast.LENGTH_LONG).show()
+                binding.messageText2.text = "Computer has beat you."
+
             }
 
             if(cpuhand == "Rock")
             {
-                Toast.makeText(this, "Paper Beats Rock. You Win!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Paper Beats Rock. You Win!", Toast.LENGTH_LONG).show()
+                binding.messageText2.text = "You beat the computer!"
             }
         }
 
@@ -64,12 +71,14 @@ class OutputActivity : AppCompatActivity() {
         {
             if(cpuhand == "Rock")
             {
-                Toast.makeText(this, "Rock Beats Scissors. You Loose", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Rock Beats Scissors. You Loose", Toast.LENGTH_LONG).show()
+                binding.messageText2.text = "Computer has beat you."
             }
 
             if(cpuhand == "Paper")
             {
-                Toast.makeText(this, "Scissors Beats Paper. You Win!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Scissors Beats Paper. You Win!", Toast.LENGTH_LONG).show()
+                binding.messageText2.text = "You beat the computer!"
             }
 
         }
