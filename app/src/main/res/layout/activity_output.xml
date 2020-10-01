@@ -22,11 +22,11 @@
         android:id="@+id/message_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/message_label"
+        android:text="@string/user_choice"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <TextView
-        android:id="@+id/is_urgent_output"
+        android:id="@+id/message_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/gap0"
@@ -34,8 +34,15 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
-        android:id="@+id/message_text"
-        android:layout_width="wrap_content"
+        android:id="@+id/message_label2"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cpu_choice"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/message_text4"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/gap0"
         android:text="@string/undefined"

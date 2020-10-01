@@ -2,20 +2,21 @@
     <string name="app_name">Assignment 1</string>
 
     <!-- radio button labels / output strings -->
-    <string name="game_rock">Purr</string>
-    <string name="game_paper">Mew</string>
-    <string name="game_scissor">Hiss</string>
+    <string name="game_rock">Rock</string>
+    <string name="game_paper">Paper</string>
+    <string name="game_scissor">Scissor</string>
 
     <!-- urgent / not urgent -->
     <string name="urgent">Urgent</string>
     <string name="not_urgent">Not Urgent</string>
 
     <string name="select_message">Select a message</string>
-    <string name="message_label">Received message</string>
+    <string name="user_choice">Users Choice</string>
+    <string name="cpu_choice">Computers Choice</string>
     <string name="undefined">Undefined</string>
 
     <!-- the button labels -->
-    <string name="send">Send</string>
+    <string name="play">Play</string>
     <string name="close">Close</string>
 
     <!-- the activity labels -->
