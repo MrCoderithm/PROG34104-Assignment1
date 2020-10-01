@@ -2,9 +2,9 @@
     <string name="app_name">Assignment 1</string>
 
     <!-- radio button labels / output strings -->
-    <string name="cat_purr">Purr</string>
-    <string name="cat_mew">Mew</string>
-    <string name="cat_hiss">Hiss</string>
+    <string name="game_rock">Purr</string>
+    <string name="game_paper">Mew</string>
+    <string name="game_scissor">Hiss</string>
 
     <!-- urgent / not urgent -->
     <string name="urgent">Urgent</string>
