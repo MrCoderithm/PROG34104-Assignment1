@@ -6,10 +6,6 @@
     <string name="game_paper">Paper</string>
     <string name="game_scissor">Scissor</string>
 
-    <!-- urgent / not urgent -->
-    <string name="urgent">Urgent</string>
-    <string name="not_urgent">Not Urgent</string>
-
     <string name="choose_hand">Choose your hand</string>
     <string name="user_choice">Users Choice</string>
     <string name="cpu_choice">Computers Choice</string>

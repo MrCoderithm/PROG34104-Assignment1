@@ -2,7 +2,6 @@ package sheridan.muhammal.assignment1
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import sheridan.muhammal.assignment1.databinding.ActivityInputBinding
 
@@ -17,12 +16,9 @@ class InputActivity : AppCompatActivity() {
 
         binding.sendButton.setOnClickListener{showOutput()}
 
-
     }
 
     private fun showOutput(){
-//        // get urgent flag value
-//        val urgent = binding.urgentCheckBox.isChecked
 
         // get the selected message text
         val message = when (binding.messageGroup.checkedRadioButtonId) {
@@ -33,7 +29,6 @@ class InputActivity : AppCompatActivity() {
         }
 
         val intent = Intent(this, OutputActivity::class.java).apply {
-            //putExtra(OutputActivity.IS_URGENT_KEY, urgent)
             putExtra(OutputActivity.MESSAGE_TEXT_KEY, message)
         }
         startActivity(intent)
